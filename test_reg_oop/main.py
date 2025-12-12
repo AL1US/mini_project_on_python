@@ -1,6 +1,6 @@
 class User:
     def __init__(self):
-        self.accounts = {} # name => password, all_players
+        self.accounts = {} # name => password, all_characters
         
         self.current_user = None
         self.current_player = None
