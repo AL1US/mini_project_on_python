@@ -42,6 +42,7 @@ class User:
             "password": password,
             "characters": []
         }
+        self.current_user = name
         print(f"\nAccount {name} has been created successfully")
         return True
     
@@ -60,31 +61,8 @@ class User:
         else:
             print("\nFirst, register or log in to your account")
             return False
-
-obj = User()
-
-while True:
-
-    print("\n0 -> exit")
-    print("1 -> login")
-    print("2 -> reg")
-    print("3 -> view profile")
-    
-    try:
-        choice = int(input("\nInput your choice: "))
         
-        if choice == 0:
-            break
-        elif choice == 1:
-            obj.log_in()
-        elif choice == 2:
-            obj.register()
-        elif choice == 3:
-            obj.get_profile()
-        elif choice == 4:
-            obj.logout()
-        else:
-            print("\nInput incorrect")
-    except Exception as e:
-        print(f"Error -> {e}")        
+    def create_character():
+        pass
+
 
