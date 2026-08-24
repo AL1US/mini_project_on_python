@@ -10,7 +10,7 @@ def query_limiter(function: Callable):
         print(f"Запрос номер {args[0].counter}")
         return result
     return wrapper
- 
+
 class ApiService:
 
     def __init__(self, limit: int):
